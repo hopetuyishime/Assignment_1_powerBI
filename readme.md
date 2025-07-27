@@ -1,7 +1,5 @@
 # 🚕 Uber Ride Data Analysis – Comprehensive Analytical Report
 
----
-
 ## 📌 Introduction
 
 The **Uber Ride Data Analysis** project is a data-driven exploration aimed at uncovering key patterns, behaviors, and insights within historical Uber ride data. This project is designed to extract valuable information that can inform decision-making processes, optimize operations, improve customer experience, and assist stakeholders in understanding temporal and geographical ride behavior.
@@ -128,10 +126,45 @@ Key takeaways:
 
 ---
 
-## 📎 Appendix (Optional)
+## 📎 Appendix
 
-* 📌 Feature Engineering Steps
-* 📌 DAX Measures (Power BI)
-* 📌 Power BI Dashboard Link (if hosted online)
-* 📌 Sample Visualizations (embedded PNGs or links)
-* 📌 Data Dictionary
+### 📌 Feature Engineering Steps
+Detailed transformations performed on the dataset for enhanced insight extraction.
+
+### 📌 DAX Measures (Power BI)
+Key DAX formulas used to create custom KPIs and calculated fields within the Power BI dashboard.
+
+### 📌 Power BI Dashboard
+🔗 [Download Power BI File](./powerbi_assignment1.pbix)
+
+This file contains interactive visuals such as:
+- Fare distribution by time and location
+- Geographic heatmaps using ArcGIS
+- KPIs like average fare, average duration, ride frequency
+
+> 📌 *Open in Power BI Desktop to explore the full interactive dashboard.*
+
+### 📌 Sample Visualizations
+
+Below are some key insights captured from the Power BI report and EDA notebooks:
+
+| Screenshot | Description |
+|------------|-------------|
+| ![Fare Distribution](./screenshots/Screenshot 2025-07-26 at 8.15.25 PM.png) | Histogram of fare amounts with log-transformation |
+| ![Temporal Trends](./screenshots/Screenshot 2025-07-26 at 8.16.10 PM.png) | Ride frequency across hours and days |
+| ![Geographical Heatmap](./screenshots/Screenshot 2025-07-27 at 9.49.13 AM.png) | High-density Uber pickup locations in NYC |
+| ![Correlation Matrix](./screenshots/Screenshot 2025-07-27 at 10.06.26 AM.png) | Relationship between fare, distance, and time |
+
+
+### 📌 Data Dictionary
+| Feature | Description |
+|---------|-------------|
+| `fare_amount` | Total fare paid for the ride |
+| `pickup_datetime` | Timestamp of ride pickup |
+| `dropoff_datetime` | Timestamp of ride dropoff |
+| `pickup_latitude/longitude` | Pickup location GPS coordinates |
+| `dropoff_latitude/longitude` | Dropoff location GPS coordinates |
+| `passenger_count` | Number of passengers on the ride |
+| `ride_duration` | Time taken for the ride (in minutes) |
+| `hour`, `day`, `month` | Time-based features for aggregation |
+| `weather_conditions` | External conditions if weather data was integrated |
